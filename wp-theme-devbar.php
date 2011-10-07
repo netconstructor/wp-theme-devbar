@@ -25,7 +25,6 @@ class WP_Theme_Devbar {
 	}
 	
 	public function _action_template_redirect() {
-		var_dump( plugins_url(__FILE__, '/style.css'));
 		wp_enqueue_style('theme-devbar', plugins_url('/style.css', __FILE__));
 	}
 	
